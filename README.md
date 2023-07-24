@@ -9,10 +9,8 @@ database of structures.
 2. Write a function removeDuplicates() to remove the duplicate entries from the records.
 3. Write a function to printPlaylist() which prints the records in the tree database in
 ascending as well as in descending order.
-
 4. Write a function to DeleteSong() to delete the particular song details from the tree-
 database as per the song_name and also as per the name of the artist provided by the user
-
 and deletes all the entries with that artist.
 5. Create a play-list (using a tree data structure) based on the attribute and its value given.
 For example, if “singer” attribute is provided and “Kishor Kumar” is the name of the
@@ -32,10 +30,8 @@ options either “Next” or “Prev”, respectively data for next and previous
 point, given an integer offset “k” and direction “up” or “down”, display the details of kth
 previous or kth next song, from the current song, respectively, in the play-list.
 8. Given a play-list and the serial number of the song, display details of the song. Provide an
-
 option to the user to select one or many attributes of this “current” song and create a play-
 list for these attribute values from the original database.
-
 9. Filter the playlist. Given a play-list and an attribute value, filter all songs in the playlist
 matching the attribute value. For example, if play-list is for “Kishore Kumar” and
 attribute value is given for genre as “comedy”, all songs in the current playlist with genre
@@ -44,6 +40,5 @@ as “comedy” will be chosen.
 select any song from the original database matching all the attribute values provided.
 Mark it using FLAG so that it doesn’t get a chance again till all other songs in the playlist
 are played randomly.
-
 11. Range-search – Search songs belonging to singers whose names are in-between singer-
 name-1 and singer-name-2, in lexicographic sorting sense.
