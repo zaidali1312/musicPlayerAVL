@@ -176,39 +176,7 @@ bool insideRange=false;
 
 void q11(struct Node* root, char *first, char* second){
 	
-//	q11(root->left,first,second);
-//	
-//	if(strcmp(root->singer,first)0){
-//		printf("Song: %s\n", root->song_name);
-//		printf("Singer: %s\n", root->singer);
-//	    printf("Lyricist: %s\n", root->lyricist);
-//	    printf("Album/Film: %s\n", root->album);
-//	    printf("Composer: %s\n", root->composer);
-//	    printf("Genre: %s\n", root->genre);
-//	    printf("Duration: %d seconds\n", root->duration);
-//		insideRange = true;
-//	}
-//	else if(strcmp(root->singer,second)==0){
-//		printf("Song: %s\n", root->song_name);
-//		printf("Singer: %s\n", root->singer);
-//	    printf("Lyricist: %s\n", root->lyricist);
-//	    printf("Album/Film: %s\n", root->album);
-//	    printf("Composer: %s\n", root->composer);
-//	    printf("Genre: %s\n", root->genre);
-//	    printf("Duration: %d seconds\n", root->duration);
-//		insideRange = false;
-//	}
-//	else if(insideRange){
-//		printf("Song: %s\n", root->song_name);
-//		printf("Singer: %s\n", root->singer);
-//	    printf("Lyricist: %s\n", root->lyricist);
-//	    printf("Album/Film: %s\n", root->album);
-//	    printf("Composer: %s\n", root->composer);
-//	    printf("Genre: %s\n", root->genre);
-//	    printf("Duration: %d seconds\n", root->duration);
-//	}
-//	
-//	q11(root->right,first,second);
+
 	if(root==NULL)return;
 	else if(strcmp(root->singer,first)<0&&strcmp(root->singer,second)<0){
 		q11(root->right,first,second);
@@ -538,36 +506,7 @@ void playlist(struct Node *root,struct Node input_att){
 }
 
 
-// void DeleteSong(struct Song **head_ref, char song_name[], char artist_name[])
-// {
-//     // Initialize two pointers to traverse the doubly linked list
-//     struct Song *current = *head_ref;
-//     struct Song *temp = NULL;
- 
-//     // Traverse through the list to find the song_name and artist_name provided by the user
-//     while (current != NULL) {
-//         // If the current node contains the song_name and artist_name, delete that node
-//         if (strcmp(current->song_name, song_name) == 0 && strcmp(current->singer, artist_name) == 0) {
-//             // Update the head of the linked list if the node to be deleted is the head node
-//             if (*head_ref == current) {
-//                 *head_ref = current->next;
-//             }
-//             // If the node to be deleted is not the first node, update the pointers of the previous and next nodes
-//             if (current->prev != NULL) {
-//                 current->prev->next = current->next;
-//             }
-//             if (current->next != NULL) {
-//                 current->next->prev = current->prev;
-//             }
-//             // Free the memory of the node to be deleted
-//             temp = current;
-//             current = current->next;
-//             free(temp);
-//         } else {
-//             current = current->next;
-//         }
-//     }
-// }
+
 
 
 
@@ -815,13 +754,7 @@ void printInOrder(struct Node *root,int *n) {
   if (root == NULL)return;
   else {
 	 printInOrder(root->left,n);
-//	 printf("Song: %s\n", root->song_name);
-//	 printf("Singer: %s\n", root->singer);
-//	 printf("Lyricist: %s\n", root->lyricist);
-//	 printf("Album/Film: %s\n", root->album);
-//	 printf("Composer: %s\n", root->composer);
-//	 printf("Genre: %s\n", root->genre);
-//	 printf("Duration: %d seconds\n", root->duration);
+
     (*n)--;
     if(*n==0){
 //        printf("index: %s\n", root->index);
@@ -884,13 +817,6 @@ struct Node* searchedinq8;
 void searchinq8(struct Node *root,int n) {
   if (root != NULL) {
   	searchinq8(root->left,n);
-    // printf("Song: %s\n", root->song_name);
-	// printf("Singer: %s\n", root->singer);
-    // printf("Lyricist: %s\n", root->lyricist);
-    // printf("Album/Film: %s\n", root->album);
-    // printf("Composer: %s\n", root->composer);
-    // printf("Genre: %s\n", root->genre);
-    // printf("Duration: %d seconds\n", root->duration);
     
     if(n==root->index){
     	searchedinq8 = root;
